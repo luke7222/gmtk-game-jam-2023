@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Jumper
+  - LevelEditorManager
   layers:
   - Default
   - TransparentFX

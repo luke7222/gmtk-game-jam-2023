@@ -24,6 +24,7 @@ public class CharacterMovement : MonoBehaviour
         {
             Debug.Log("Collision with Jumper");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            Debug.Log("Jumped");
 
         }
 
@@ -38,6 +39,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         rb.velocity = new Vector2(turn * movespeed, rb.velocity.y);
     }
 }
