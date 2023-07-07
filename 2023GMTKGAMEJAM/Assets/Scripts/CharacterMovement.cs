@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -25,8 +26,10 @@ public class CharacterMovement : MonoBehaviour
             Debug.Log("Collision with Jumper");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             Debug.Log("Jumped");
+            
 
         }
+        
 
     }
 
