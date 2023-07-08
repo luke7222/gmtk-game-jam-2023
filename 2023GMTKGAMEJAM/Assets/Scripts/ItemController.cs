@@ -22,7 +22,11 @@ public class ItemController : MonoBehaviour
     {
         if(quantity > 0)
         {
+            Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+
             Clicked = true;
+            Instantiate(editor.itemImage[ID], new Vector3(worldPosition.x,worldPosition.y,0), Quaternion.identity);
             quantity--;
             quantityText.text = quantity.ToString();
             editor.currentButtonPressed = ID;
