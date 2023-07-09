@@ -20,17 +20,23 @@ public class CharacterMovement : MonoBehaviour
         {
             Debug.Log("Collision with wall");
             turn = turn * -1;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
         }
-        /*if (collision.gameObject.tag == "Jumper")
+        
+                    
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Jumper")
         {
             Debug.Log("Collision with Jumper");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             Debug.Log("Jumped");
-            
-
-        }*/
-        
-
+        }
     }
 
     private void Awake()

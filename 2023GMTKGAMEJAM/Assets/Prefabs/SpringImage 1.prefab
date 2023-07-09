@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 503327459113481707}
   - component: {fileID: 5074096015864593899}
   m_Layer: 0
-  m_Name: SpringImage
+  m_Name: SpringImage 1
   m_TagString: ItemImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

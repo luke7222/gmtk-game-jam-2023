@@ -5,7 +5,7 @@ using UnityEngine;
 public class springScript : MonoBehaviour
 {
     public Animator anim;
-    public GameObject character;
+    //public GameObject character;
     public float jumpForce = 20f;
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,7 @@ public class springScript : MonoBehaviour
         if(collision.gameObject.tag == "Character")
         {
             anim.SetBool("onSpring", true);
+            
         }
 
 
