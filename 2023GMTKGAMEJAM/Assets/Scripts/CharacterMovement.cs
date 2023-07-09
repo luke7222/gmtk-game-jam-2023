@@ -21,14 +21,14 @@ public class CharacterMovement : MonoBehaviour
             Debug.Log("Collision with wall");
             turn = turn * -1;
         }
-        if (collision.gameObject.tag == "Jumper")
+        /*if (collision.gameObject.tag == "Jumper")
         {
             Debug.Log("Collision with Jumper");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             Debug.Log("Jumped");
             
 
-        }
+        }*/
         
 
     }

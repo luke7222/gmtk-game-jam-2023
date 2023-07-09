@@ -9,6 +9,7 @@ TagManager:
   - LevelEditorManager
   - Goal
   - ItemImage
+  - Character
   layers:
   - Default
   - TransparentFX
